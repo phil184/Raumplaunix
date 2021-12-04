@@ -34,6 +34,7 @@ public class Scanner_Activity extends AppCompatActivity {
         codeScanner = new CodeScanner(this,scannView);
         resultData = findViewById(R.id.resultQR);
 
+
         codeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
             public void onDecoded(@NonNull Result result) {
@@ -46,6 +47,7 @@ public class Scanner_Activity extends AppCompatActivity {
                 });
             }
         });
+
 
         scannView.setOnClickListener(new View.OnClickListener() {
             @Override
